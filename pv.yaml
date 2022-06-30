@@ -1,0 +1,89 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv1
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv2
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis2"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv3
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis3"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv4
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis4"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv5
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis5"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-cluster-pv6
+  labels:
+    type: local
+spec:
+  storageClassName: redis-cluster-storage-class
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/redis6"
